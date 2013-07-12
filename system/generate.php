@@ -133,30 +133,11 @@ function writeCSS($epubName) {
 	$containerCSS = $epubName."/OEBPS/css/stylesheet.css";
 	$filecontent = <<<CSS
 @font-face {
-    font-family: 'Univers';
-    src: url('../type/UniversLTStd-Light.otf') format('opentype');
+    font-family: 'OpenSans';
+    src: url('../type/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Univers';
-    src: url('../type/UniversLTStd-Black.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Univers';
-    src: url('../type/UniversLTStd-LightObl.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Univers';
-    src: url('../type/UniversLTStd-XBlack.otf') format('opentype');
-    font-weight: 900;
-    font-style: normal;
-}
-
 
 html, body { height: 100%; }
 body { width: 429px;  height: 532px;  margin: 0;  -webkit-user-select: text; font-family: 'Univers', sans-serif; font-size: 11px; line-height: 16px; }
@@ -174,32 +155,6 @@ header { position: absolute;  line-height: 38px; font-weight: bold; font-size: 1
 .quote { font-style: italic;}
 .quote span { display: block; font-style: normal;}
 
-.page002 img { position: absolute; left:0; top:0; z-index: -1; }
-.page003 img { position: absolute; left:0; top:0; z-index: -1; }
-.page004 img { position: absolute; left:0; top:0; z-index: -1; }
-.page005 header { color: #fff;  background-color: #ED1C24;  width: 325px;  height: 36px;  position: absolute; left: 40px; top: 36px; font-weight: 900; line-height: 36px; padding-left: 1em; }
-.page038 { background-color: #ffea00;}
-.page038 header { color: #ffea00;}
-.page042 header { background-color: transparent; color: #000; }
-.page044 { background-color: #cfedfc;}
-.page044 header { color: #cfedfc;}
-.page046 header { background-color: #f49ab9;}
-.page050 header { background-color: #00a651;}
-.page054 header { background-color: transparent; color: #000; position: absolute; top: 409px; left: 212px;}
-.page056 header { background-color: #ed1c24; }
-.page064  { background-color: #ed1c24; }
-.page064 header { color: #ed1c24; }
-.page064 .firstline { position: relative;  right: 14px;}
-.page066 header { background-color:#00a651; color: #FFF; }
-.page070 { background-color:#d0a26f; }
-.page070 .firstline { position: relative;  right: 14px; }
-.page070 header { color:#d0a26f; }
-.page072 { background-color:#231f20; color: #fff; }
-.page072 .content { color: #fff; }
-.page072 header { background-color: #fff; color:#231f20; }
-.page074 { background-color:#ed1c24; }
-.page074 header { color:#ed1c24; }
-.page076 header { background-color:#604da0; }
 CSS;
 	$containerCSShandle = fopen($containerCSS, 'w');
 	fwrite($containerCSShandle, $filecontent);
@@ -265,7 +220,7 @@ function generateTOC($epubName){
 <?xml version="1.0" encoding="utf-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:ibooks="http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0" epub:prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0">
   <head>
-    <title>Think Like A Lawyer (Don't Act Like One)</title>
+    <title>Sample Title</title>
   </head>
   
   <body>
@@ -288,8 +243,6 @@ function generateTOC($epubName){
   <nav epub:type="page-list">
     <ol>
       <li><a href="page001.xhtml">Cover</a></li>
-      <li><a href="page002.xhtml">Never Lose Sight</a></li>
-      <li><a href="page004.xhtml">Avoid Bickering</a></li>
     </ol>
   </nav>
   </body>
