@@ -1,0 +1,105 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    width: 1080px; 
+    margin:0 auto;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.spread {background-color:#eee;margin-bottom: 3px; font-size: 13px; line-height: 24px;padding: 0 1em; position: relative;}
+.page {width: 1000px;float: right;}
+a.editPage { background-color: green; color:white; text-decoration: none; padding: 2px; float: left; width: 37px; text-align: center; margin-right: 6px; border-radius: 2px; box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, .5); font-size: 11px; margin-top: 5px;}
+.handle {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.page .edit .page-number { float:left; width: 20px;  font-weight: bold; font-size: 10px;}
+.page .edit .title { float:left; width: 240px; }
+.page .edit .title input[type="text"] { width: 230px; }
+.page .edit .image { float:left; width: 60px;  }
+.page .edit .content { float:left; width: 450px; margin-right: 12px;}
+.page .edit .content textarea { width: 450px; }
+.page .edit .added { float:left; width: 70px; font-size: 10px; line-height: 13px; color: #999; margin-top: 7px;}
+.page .edit .changed { float:left; width: 70px; font-size: 10px; line-height: 13px; color: #999; margin-top: 7px; }
+.page .edit .update { background-color: green; color:white; text-decoration: none; padding: 2px; float: left; width: 42px; text-align: center; margin-right: 6px; }
+.page .edit .update a { color: #FFF; text-decoration: none; }
+.page .title { float:left; width: 350px; }
+.page .page-number { float:left; width: 20px;  font-weight: bold; font-size: 10px; }
+
+.message { 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(11, 150, 11, 0.81);
+    left: 0;
+    font-size: 24px;
+    text-align: center;
+    line-height: 48px;
+    font-weight: bold;
+    color: #fff;
+    display: none;
+ }
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}

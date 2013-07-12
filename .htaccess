@@ -1,0 +1,35 @@
+<IfModule mod_setenvif.c>
+</IfModule>
+<IfModule mod_headers.c>
+</IfModule>
+Options -MultiViews
+ErrorDocument 404 /404.html
+<IfModule mod_headers.c>
+</IfModule>
+<IfModule mod_mime.c>
+</IfModule>
+AddDefaultCharset utf-8
+<IfModule mod_mime.c>
+</IfModule>
+<IfModule mod_rewrite.c>
+</IfModule>
+<IfModule mod_rewrite.c>
+</IfModule>
+<IfModule mod_autoindex.c>
+</IfModule>
+<IfModule mod_rewrite.c>
+</IfModule>
+<FilesMatch "(^#.*#|\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|sw[op])|~)$">
+</FilesMatch>
+<IfModule mod_deflate.c>
+</IfModule>
+<IfModule mod_headers.c>
+</IfModule>
+FileETag None
+<IfModule mod_expires.c>
+</IfModule>
+AuthGroupFile /dev/null
+AuthType Basic
+AuthUserFile /home/deb68080/domains/mrsauli.nl/.htpasswd/public_html/tlal/.htpasswd
+AuthName "tlal"
+require valid-user
