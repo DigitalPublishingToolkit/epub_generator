@@ -114,11 +114,8 @@ function generatePackage($epubName) {
 {$imageList}
 
       <!-- typefaces -->
-      <item id="typeface-universlight" href="type/UniversLTStd-Light.otf" media-type="font/opentype" />
-      <item id="typeface-universlightoblique" href="type/UniversLTStd-LightObl.otf" media-type="font/opentype" />
-      <item id="typeface-universblack" href="type/UniversLTStd-Black.otf" media-type="font/opentype" />
-      <item id="typeface-universxblack" href="type/UniversLTStd-XBlack.otf" media-type="font/opentype" />
-      
+      <item id="typeface-universlight" href="type/OpenSans-Regular.ttf" media-type="font/truetype" />
+     
     </manifest>
     
     <spine>
