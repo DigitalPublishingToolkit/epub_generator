@@ -2,10 +2,10 @@
 
 // database connect
 
-$username = 'deb68080_admin';
-$password = '[@Gehe1m]';
-$db_name  = 'deb68080_tlal';
-$hostname = 'localhost';
+$username = '';
+$password = '';
+$db_name  = '';
+$hostname = '';
 
 $db = mysql_connect($hostname, $username, $password);
 
