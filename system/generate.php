@@ -63,6 +63,7 @@ function generatePackage($epubName) {
   $time = date('Y-m-d-H:i:s');
   $fileName = $epubName.'/OEBPS/package.opf';
   $filelist = '';
+  $imageList = '';
   $spine = '';
   $i = 1;
   $spread_result = mysql_query("SELECT * FROM spread");
